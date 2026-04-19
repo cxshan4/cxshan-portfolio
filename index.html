@@ -3,88 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christian | Personal Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Christian | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <nav>
-        <h1>Christian</h1>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+<div class="nav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <button class="toggle-btn" onclick="toggleDark()">🌙</button>
+</div>
 
-<section id="home" class="hero">
-    <h2>Christian Alfred R. Estabillo </h2>
-    <p>
-        Hi! I am an 18-year-old first-year BSIT student with a strong interest in technology and innovation.
-       I enjoy learning programming, developing websites, and exploring how digital systems work.
-    </p>
+<div id="home" class="header">
+    <h1>Christian Alfred R. Estabillo</h1>
+    <p>BSIT Student | Future IT Professional & Entrepreneur</p>
+</div>
+
+<div class="profile">
+    <img src="profile.jpg" alt="Profile">
+</div>
+
+<div class="container">
+
+    <div id="about" class="card">
+        <h2>About Me</h2>
+        <p>I am an 18-year-old BSIT student passionate about programming and web development.</p>
+    </div>
 
     <div class="card">
-        <img src="image/profile.jpg" alt="Profile Picture">
-    </div>
-</section>
+        <h2>Skills</h2>
 
-<section id="about">
-    <h2>About Me</h2>
-
-    <div class="card">
-        <h3>Background Information</h3>
-        <p>
-            As I continue my studies, I am building my skills in coding and web development 
-            while improving my ability to solve problems and create useful projects.
-        </p>
-
-        <h3>Education / Interests</h3>
-        <p>
-            My interests include web design, programming, and continuously learning new technologies
-            that can help me grow as a future IT professional.
-        </p>
-    </div>
-</section>
-
-<section id="projects">
-    <h2>Projects / Portfolio</h2>
-
-    <div class="projects">
-        <div class="project-card">
-            <h3>Navigation Bar Gallery Website</h3>
-            <p>A clean website focused on navigation and layout design.</p>
+        <div class="skill">
+            <p>HTML</p>
+            <div class="bar"><div class="fill" style="width: 90%"></div></div>
         </div>
 
-        <div class="project-card">
-            <h3>Wireframe Blueprint</h3>
-            <p>A project showing planning and UI structure skills.</p>
+        <div class="skill">
+            <p>CSS</p>
+            <div class="bar"><div class="fill" style="width: 85%"></div></div>
         </div>
 
-        <div class="project-card">
-            <h3>Portfolio Website</h3>
-            <p>This responsive personal website project.</p>
+        <div class="skill">
+            <p>Java</p>
+            <div class="bar"><div class="fill" style="width: 70%"></div></div>
+        </div>
+
+        <div class="skill">
+            <p>JavaScript</p>
+            <div class="bar"><div class="fill" style="width: 65%"></div></div>
         </div>
     </div>
-</section>
 
-<section id="contact">
-    <h2>Contact</h2>
+    <div id="projects" class="card">
+        <h2>Projects</h2>
 
-    <div class="card">
-        <p>Email: <a href="mailto:echristianalfred@gmail.com">echristianalfred@gmail.com </a></p>
-        <p>Facebook: <a href="#">Christian Estabillo</a></p>
+        <div class="projects">
+            <div class="project-box">
+                <h3>Navigation Bar Website</h3>
+                <p>Clean UI design</p>
+                <a href="#" class="btn">View</a>
+            </div>
+
+            <div class="project-box">
+                <h3>Wireframe Blueprint</h3>
+                <p>UI planning</p>
+                <a href="#" class="btn">View</a>
+            </div>
+
+            <div class="project-box">
+                <h3>Portfolio Website</h3>
+                <p>Responsive design</p>
+                <a href="#" class="btn">View</a>
+            </div>
+        </div>
     </div>
-</section>
 
-<footer>
-    <p>© 2026 Christian Alfred R. Estabillo| Personal Website</p>
-</footer>
+    <div id="contact" class="card">
+        <h2>Contact</h2>
+        <p>Email: your@email.com</p>
+        <a href="#" class="btn">Message Me</a>
+    </div>
+
+</div>
+
+<div class="footer">
+    <p>© 2026 Christian | Portfolio</p>
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
